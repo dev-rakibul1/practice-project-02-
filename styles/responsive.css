@@ -1,0 +1,66 @@
+@media only screen and (max-width: 688px) {
+  .navbar {
+    display: none;
+  }
+
+  /* hero area */
+
+  .hero__area {
+    flex-direction: column-reverse;
+  }
+
+  .hero__area .hero__info .hero__title {
+    font-size: 9vw;
+    line-height: normal;
+  }
+
+  .hero__info {
+    text-align: center;
+  }
+
+  .hero__btn {
+    display: inline;
+  }
+
+  .hero__content {
+    margin-top: 14px;
+  }
+
+  .company__brand ul {
+    flex-wrap: wrap;
+  }
+
+  .gallery__box {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .gallery__single__box {
+    max-width: 100%;
+    margin-top: 15px;
+  }
+  .gallery__single__box .thumbnail img {
+    width: 100%;
+  }
+
+  .gallery__single__box .thumbnail {
+    max-width: 100%;
+  }
+
+  .read__more__btn {
+    text-align: center;
+  }
+
+  .freature__box {
+    flex-direction: column-reverse;
+  }
+
+  .freature__box .feature__thumbnail {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  .freature__box .feature__thumbnail img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+}

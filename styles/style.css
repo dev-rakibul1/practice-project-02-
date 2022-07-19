@@ -1,0 +1,290 @@
+/* -------------------------------------------------------------------------- */
+/*                      React or typography design
+/* -------------------------------------------------------------------------- */
+/* Calling google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body__font: "Poppins", sans-serif;
+  --header__color: #3a3a3a;
+  --white: #ffffff;
+  --btn__bg: #e02c6d;
+  --gallery__fonts: "Inter", sans-serif;
+  --reting__color: #fb8200;
+}
+body {
+  font-family: var(--body__font);
+  box-sizing: border-box;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+.section-gap {
+  margin-top: 100px;
+}
+
+.container {
+  width: 960px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.global__btn {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--white);
+  border: none;
+  background-color: var(--btn__bg);
+  padding: 10px 24px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              Header desing
+/* -------------------------------------------------------------------------- */
+
+/* navigation bar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* navbar brand */
+.navbar__brand {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.navbar__nav {
+  display: flex;
+}
+
+.navbar__nav .nav__item {
+  margin-left: 34px;
+}
+.nav__item .nav__link {
+  text-transform: capitalize;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+/* hero area desing */
+.hero__area {
+  display: flex;
+  column-gap: 133px;
+  justify-content: center;
+  align-items: center;
+  padding: 145.8px 0;
+}
+/* hero article */
+.hero__area .hero__info .hero__title {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 70px;
+  color: var(--header__color);
+}
+
+.hero__area .hero__info .hero__dis {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--header__color);
+  margin-top: 16px;
+}
+.hero__area .hero__info .hero__btn {
+  margin-top: 26.1px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              Company brand logo
+/* -------------------------------------------------------------------------- */
+
+.company__brand ul {
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #ddd;
+  padding: 22px 0;
+  align-items: center;
+  text-align: center;
+}
+
+.company__brand ul li img {
+  max-width: 75%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                           products gallery desing
+/* -------------------------------------------------------------------------- */
+.products__gallery .project__gallery__title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 70px;
+  text-align: center;
+  margin-top: 30px;
+}
+.gallery__box {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.gallery__single__box {
+  max-width: 329px;
+  padding: 14px;
+  box-shadow: 0px 0px 9px 1px #0000002e;
+  background-color: var(--white);
+}
+
+.gallery__single__box .thumbnail {
+  max-width: 300px;
+  height: auto;
+}
+
+.gallery__single__box .products__details .gallery__box_title {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 500;
+  color: #18191f;
+  margin-top: 16px;
+}
+.gallery__single__box .products__details .products__price {
+  font-family: var(--gallery__fonts);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  margin-top: 6px;
+}
+
+.gallery__single__box .products__details .proects__rating {
+  margin-top: 5px;
+}
+.gallery__single__box .products__details .proects__rating ul {
+  display: flex;
+  color: var(--reting__color);
+}
+
+.gallery__single__box .products__details .proects__rating ul span {
+  margin-left: 10px;
+  color: #5e6366;
+}
+
+.gallery__single__box .products__details p {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: var(--gallery__fonts);
+  line-height: 20.02px;
+  letter-spacing: 1.8%;
+  color: #787885;
+}
+.read__more__btn {
+  margin-top: 50px;
+  text-align: right;
+}
+
+a.see__more {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--btn__bg);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          Feature section desing
+/* -------------------------------------------------------------------------- */
+
+.freature__box {
+  display: flex;
+  column-gap: 96px;
+  justify-content: center;
+  align-items: center;
+}
+
+.freature__box .feature__thumbnail {
+  max-width: 404px;
+  max-height: 270px;
+}
+.freature__box .feature__thumbnail img {
+  max-width: 404px;
+  max-height: 270px;
+}
+
+.feature__info .freature__title {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #0a0826;
+}
+.feature__info .feature__dis {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #6c6c6c;
+  margin-top: 16px;
+}
+
+.feature__info .feature__btn {
+  border-radius: 0;
+  margin-top: 16px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          Footer section desing
+/* -------------------------------------------------------------------------- */
+
+.footer {
+  text-align: center;
+  background: #0b0a29;
+  padding: 89px 0;
+}
+
+.footer__article h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  color: var(--white);
+}
+.footer__article p {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.social__list ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__list ul li {
+  padding: 10px;
+  color: #fff;
+}
+.social__list ul li a {
+  color: #fff;
+}
